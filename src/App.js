@@ -31,13 +31,11 @@ function mapStateToProps (state){
   }
 
 function mapDispatchToProps(dispatch){
- 
-  
+
   return {
     increase : () => dispatch({type: 'INCREASE' , val:document.getElementById('cur').value}),
     decrease : () => dispatch({type: 'DECREASE'})
 
   }
 }
-
 export default connect(mapStateToProps,mapDispatchToProps )(App);

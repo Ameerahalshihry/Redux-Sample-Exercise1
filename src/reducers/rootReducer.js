@@ -5,7 +5,7 @@ const initState = {
 
 const reducer = (state = initState , action ) => {
     if (action.type === 'INCREASE'){
-        const sum = state.count + action.val
+        const sum = state.count + Number(action.val)
         // console.log(action.val)
         return { 
             count: sum }
